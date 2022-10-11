@@ -1,43 +1,43 @@
-Задание 1
-В файле содержится информация о покупках людей
+Exercise 1
+The file stores information about people's purchases
 
-id	Товар	 Количество
-1	  Арбуз	    1.0
-1	  Чай     	1.0
-1	  Сгущёнка	0.5
-2 	Арбуз	    3.0
-2	  Чай	      1.0
-id – означает покупку (в одну покупку входят все товары, купленные пользователем во время 1 похода в магазин)
-Товар – наименование товара
-Количество – число единиц купленного товара
-Воспользуйтесь этими данными и выясните, какие пары товаров пользователи чаще всего покупают вместе. По сути, вам необходимо найти паттерны покупок, что позволит оптимизировать размещение продуктов в магазине, для удобства пользователей и увеличения выручки.
+id	Product	        Quantity
+1	  Watermelon	    1.0
+1	  Tea     	      1.0
+1	  Condensed milk	0.5
+2 	Watermelon	    3.0
+2	  Tea	            1.0
+id – means a purchase (one purchase includes all products purchased by the user during 1 trip to the store)
+Product - product name
+Quantity - the number of units of the purchased item
+Take advantage of this data and find out which pairs of products users most often buy together. Essentially, you need to find shopping patterns that will optimize product placement in the store for user experience and revenue growth.
 
-1_Товар	 2_Товар	 Встречаемость
-Чай	      Арбуз	       2
-Арбуз	   Сгущёнка	     1
-Чай	     Сгущёнка	     1
-1_Товар – наименование первого товара
-2_Товар – наименование второго товара
-Встречаемость – число раз, когда такая пара была встречена
-Другими словами: 2 раза люди покупали одновременно чай и арбуз, 1 раз одновременно покупали арбуз и сгущёнку и 1 раз одновременно были куплены чай со сгущёнкой.
+1_product	     2_product	       Occurrence
+Tea	           Watermelon	       2
+Watermelon	   Condensed milk	   1
+Tea	           Condensed milk	   1
+1_product – name of the first product
+2_product – name of the second product
+Occurrence - the number of times such a pair has been encountered
+In other words: 2 times people bought tea and watermelon at the same time, 1 time they bought watermelon and condensed milk at the same time, and 1 time they bought tea with condensed milk at the same time.
 
-Напишите код на python для получения нужной таблицы и укажите 5 наиболее распространённых паттернов.
+Write a python code to get the desired table and list the 5 most common patterns.
 
 
-Задание 2
-К вам поступила информация о числе заказов за прошедшие 3 месяца с разрешением по неделям. 
-Постройте (если это возможно) прогноз продаж на следующие 3 месяца, с учётом того, что в неделю с 2020-02-02 по 2020-02-09 была проведена массивная акция, 
-повысившая число заказов на 7%
+Task 2
+You have received information about the number of orders for the past 3 months with a resolution by week.
+Build (if possible) a sales forecast for the next 3 months, given that a massive promotion was held in the week from 2020-02-02 to 2020-02-09,
+increased the number of orders by 7%
 
-Дата	       Число заказов
+Date              Number of orders
 2020-01-05	     650
 2020-01-12	     837
 
 
 
 
-Задание 3
-В базе данных вашей компании присутствуют следующие таблицы
+Task 3
+Your company database contains the following tables
 
 city
 city_id – id города, где проходит акция
@@ -82,4 +82,4 @@ client_city – город, где находится покупатель
 city – город
 revenue – сумма выручки
 quantity – число проданных единиц
-При этом в таблице должны присутствовать только значения, где в поле status стоит значение 1, и только те, где purchase_date находится в диапазоне от 01.05.2020 до 01.08.2020
+At the same time, the table should contain only values where the value 1 is in the status field, and only those where the purchase_date is in the range from 05/01/2020 to 08/01/2020
